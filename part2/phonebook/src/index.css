@@ -1,0 +1,98 @@
+body {
+  font-family: 'Palatino', "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;  margin: 0px;
+  padding: 0px;
+  margin: 0px;
+  margin-left: calc((100vw - 480px) / 2);
+  margin-right: calc((100vw - 480px) / 2);
+  background-color: rgb(118, 177, 118);
+  display: flex;
+  flex-direction: column;
+
+  #root {
+    height: 100vh;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 2rem;
+  margin: 10px;
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  h1 {
+    font-size: 17vw;
+  }
+}
+
+button {
+  border-radius: 10px;  
+  margin: 5px;
+  height: 30px;
+  width: 100%;
+}
+
+input {
+  background-color: lightgreen;
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+}
+
+.input_div {
+  display: flex;
+  justify-content: space-between;
+  text-wrap: nowrap;
+
+  div {
+    margin-right: 10px;
+    width: 150px;
+    font-size: 1.2rem;
+  }
+}
+
+.numbers_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete_user {
+  margin-left: auto;
+  margin-right: 0;
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.app {
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 5%;
+  height: 100%;
+}
+
+.notification {
+  color: black;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error {
+  background: rgb(255, 118, 118);
+}
+
+.success {
+  background: rgb(97, 255, 76);
+}
