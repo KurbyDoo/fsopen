@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001/api/notes'
+const baseUrl = 'https://notes-app-fsopen.onrender.com'
 
 const getAll = () => {
     const request = axios.get(baseUrl)
